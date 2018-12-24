@@ -40,7 +40,7 @@ public class Main {
             System.err.println("The OS does not support " + encoding);
             e.printStackTrace();
         }
-
+        content = content.replaceAll("\r", "");
         List<Object> layer = new ArrayList<Object>();
 
         String x="" , y="", z="";
